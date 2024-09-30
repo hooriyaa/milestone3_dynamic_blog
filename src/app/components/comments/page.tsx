@@ -37,7 +37,7 @@ const Comments = () => {
             type="text"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
-            placeholder="Author here"
+            placeholder="Your Name"
             className="border border-purple-300 rounded-md p-3 px-6 w-full focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-300 bg-white"
           />
           <input

@@ -26,7 +26,7 @@ const Comments = () => {
 
   return (
     <>
-      <div className="p-6 py-14 border rounded-lg shadow-lg bg-purple-50 mt-6 max-w-2xl mx-auto">
+      <div className="p-6 py-14 px-7 border rounded-lg shadow-lg bg-purple-50 mt-6 max-w-2xl mx-auto">
         <h2 className="md:text-3xl text-2xl font-bold font-serif text-black mb-6 capitalize">
           Share your valuable insights with us below!
         </h2>
@@ -38,18 +38,18 @@ const Comments = () => {
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
             placeholder="Author here"
-            className="border border-purple-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-300"
+            className="border border-purple-300 rounded-md p-3 px-6 w-full focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-300 bg-white"
           />
           <input
             type="text"
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
             placeholder="Comment here"
-            className="border border-purple-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-300"
+            className="border border-purple-300 rounded-md p-3 px-6 w-full focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-300 bg-white"
           />
           <button
             onClick={handleAddComment}
-            className="bg-[#7A1CAC] text-white px-6 py-3 rounded-lg hover:bg-[#9737cb] transition-colors duration-300 shadow-md"
+            className="bg-[#7A1CAC] text-white px-6 py-3 pt-2 rounded-lg hover:bg-[#9737cb] transition-colors duration-300 shadow-md"
           >
             Add Comment
           </button>
@@ -61,7 +61,7 @@ const Comments = () => {
           {comments.map(({ id, author, text }) => (
             <li
               key={id}
-              className="bg-white border border-purple-500 rounded-lg shadow-md shadow-purple-400 p-6 overflow-hidden"
+              className="bg-white border border-purple-500 rounded-lg shadow-md shadow-purple-400 p-6  overflow-hidden"
             >
               <p className="text-xl font-semibold text-gray-600 break-words">
                 {author}
